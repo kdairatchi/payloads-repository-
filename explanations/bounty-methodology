@@ -1,0 +1,14 @@
+# Reconnaissance Techniques
+
+## Finding a Target
+### Platforms to Find Targets:
+- HackerOne, Bugcrowd, Synack
+
+## Finding Subdomains
+### Resources and Tools:
+- Google, GitHub, Shodan, Censys, CRT.sh, FindSubdomains
+- Command-line Tools:
+  ```bash
+  subfinder -d example.com
+  assetfinder --subs-only example.com
+  amass enum -d example.com --passive | tee amass.txt
